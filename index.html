@@ -1,138 +1,209 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>F.A Enterprise Box Maker</title>
+    <title>FA Enterprise | Premium Garments Packaging</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: repeating-linear-gradient(
-        0deg,
-        #d6b27c,
-        #d6b27c 10px,
-        #e6c89c 10px,
-        #e6c89c 20px
-    );
-    animation: fadeIn 1.5s ease-in;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: repeating-linear-gradient(
+                90deg,
+                #c79a5c,
+                #c79a5c 20px,
+                #b88645 20px,
+                #b88645 40px
+            );
+            color: white;
+        }
 
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
+        header {
+            background: linear-gradient(to right, #000000cc, #000000cc),
+                        url('https://images.unsplash.com/photo-1581091215367-59ab6c41b8b8');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
 
-header {
-    background: white;
-    padding: 20px;
-    text-align: center;
-}
+        header img {
+            width: 160px;
+            margin-bottom: 20px;
+        }
 
-header img {
-    width: 120px;
-}
+        header h1 {
+            font-size: 45px;
+            margin: 0;
+            color: gold;
+        }
 
-h1 {
-    margin: 10px 0 5px;
-}
+        header p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
 
-.highlight {
-    background: white;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    font-weight: bold;
-    line-height: 1.6;
-}
+        .btn {
+            padding: 12px 25px;
+            background: gold;
+            color: black;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+        }
 
-.section {
-    padding: 20px;
-    text-align: center;
-}
+        .highlight {
+            background: white;
+            color: black;
+            padding: 50px 20px;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1.7;
+        }
 
-.products img, .owner img {
-    width: 250px;
-    margin: 15px;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
 
-.products img:hover, .owner img:hover {
-    transform: scale(1.05);
-}
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-.contact {
-    background: white;
-    padding: 20px;
-    text-align: center;
-}
+        .card {
+            background: #222;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 15px;
+            width: 280px;
+            transition: 0.4s;
+            animation: slideUp 1.5s ease-in-out;
+        }
 
-footer {
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
+        .card:hover {
+            transform: translateY(-10px);
+        }
 
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
 
-.whatsapp a {
-    background: #25D366;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-}
-</style>
+        .card h3 {
+            margin-top: 15px;
+            color: gold;
+        }
+
+        footer {
+            background: #000;
+            padding: 30px;
+            text-align: center;
+        }
+
+        a {
+            color: gold;
+            text-decoration: none;
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes fadeIn {
+            from {opacity:0;}
+            to {opacity:1;}
+        }
+
+        @keyframes slideUp {
+            from {transform:translateY(50px); opacity:0;}
+            to {transform:translateY(0); opacity:1;}
+        }
+
+        @keyframes pulse {
+            0% {transform:scale(1);}
+            50% {transform:scale(1.08);}
+            100% {transform:scale(1);}
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-    <img src="images/LOGO.png.jpg" alt="Company Logo">
-    <h1>F.A ENTERPRISE BOX MAKER</h1>
-    <p><b>Since 1996</b></p>
-    <p>GST No: 19BOLPA5021H1Z6</p>
+    <img src="logo.png" alt="Company Logo">
+    <h1>FA ENTERPRISE</h1>
+    <p><strong>Since 1996</strong></p>
+    <p><strong>GST No: 19BOLPA5021H1Z6</strong></p>
+    <p>QUALITY IN PRODUCT SHOWS QUALITY IN LIFE</p>
+    <br>
+    <a href="#contact" class="btn">Contact Us</a>
 </header>
 
 <div class="highlight">
 WE ARE PROVIDING PACKAGING SOLUTIONS SINCE 1996 SPECIALIZING IN HIGH QUALITY GARMENTS BOXES LIKE 6PC, 1PC, KARTONS, METALLIC BOXES, METALLIC KARTONS WITH GREAT DESIGNS AND AFFORDABLE PRICES. JOIN US AND LET US BE YOUR PACKAGING PARTNER AND FULFIL YOUR PACKAGING NEEDS.
 </div>
 
-<div class="section products">
+<section>
     <h2>Our Products</h2>
-    <img src="images/6PC.png.jpg" alt="6PC Box">
-    <img src="images/1PC.png.jpg" alt="1PC Box">
-</div>
+    <div class="products">
 
-<div class="section owner">
-    <h2>Owner</h2>
-    <img src="images/OWNER.png.jpg" alt="Owner Photo">
-</div>
+        <div class="card">
+            <img src="6pc.jpg">
+            <h3>6PC</h3>
+        </div>
 
-<div class="contact">
+        <div class="card">
+            <img src="1pc.jpg">
+            <h3>1PC</h3>
+        </div>
+
+        <div class="card">
+            <img src="karton.jpg">
+            <h3>KARTONS</h3>
+        </div>
+
+        <div class="card">
+            <img src="metallic.jpg">
+            <h3>METALLIC</h3>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
     <h2>Contact Details</h2>
-    <p><b>Proprietor: Munna Bhai</b> – 9831671101</p>
-    <p><b>Farhan</b> – 9674182706</p>
-    <p><b>Amran</b> – 7044529461</p>
-    <br>
-    <a href="https://www.instagram.com/f.a.enterprise_box_maker?utm_source=qr&igsh=ejMycWx1eWJpNQ==" target="_blank">Instagram</a>
-</div>
-
-<div class="whatsapp">
-    <a href="https://wa.me/919674182706" target="_blank">WhatsApp</a>
-</div>
+    <p><strong>Proprietor: Munna Bhai</strong> – 9831671101</p>
+    <p><strong>Farhan:</strong> 9674182706</p>
+    <p><strong>Amran:</strong> 7044529461</p>
+    <p>📧 Email: <a href="mailto:faenterprise825@gmail.com">faenterprise825@gmail.com</a></p>
+</section>
 
 <footer>
-    © 2024 F.A Enterprise Box Maker | All Rights Reserved
+    <p>© 2026 FA Enterprise | Premium Indian Packaging Industry</p>
+    <br><br>
+    <a href="https://www.instagram.com/f.a.enterprise_box_maker?utm_source=qr&igsh=ejMycWx1eWJpNQ==" target="_blank">
+        📸 Follow us on Instagram
+    </a>
 </footer>
+
+<a class="whatsapp" href="https://wa.me/919674182706" target="_blank">
+    WhatsApp Us
+</a>
 
 </body>
 </html>
