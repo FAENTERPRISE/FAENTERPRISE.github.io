@@ -5,20 +5,62 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-
-/* Background Corrugated Flute White + Brown */
 body {
-margin:0;
-font-family: Arial, sans-serif;
-background:
-repeating-linear-gradient(
-90deg,
-#ffffff,
-#ffffff 12px,
-#e6c79c 12px,
-#e6c79c 24px
-);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
 }
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+<div class="products">
+
+    <div class="card">
+        <img src="6pc.jpg">
+        <h3>6PC Box</h3>
+        <p>₹2000</p>
+    </div>
+
+    <div class="card">
+        <img src="1pc.jpg">
+        <h3>1PC Box</h3>
+        <p>₹500</p>
+    </div>
+
+</div>
+.card {
+    background: white;
+    color: black;
+    width: 280px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+}
+
+.card p {
+    padding: 0 15px 15px;
+    font-weight: bold;
+}
+</style>
 
 /* Header */
 header {
