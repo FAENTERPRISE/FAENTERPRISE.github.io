@@ -21,23 +21,32 @@
         }
 
         header {
-            background: linear-gradient(to right, #000000cc, #000000cc),
-                        url('https://images.unsplash.com/photo-1581091215367-59ab6c41b8b8');
-            background-size: cover;
-            background-position: center;
-            padding: 80px 20px;
+            background: #000;
             text-align: center;
         }
 
         header img {
-            width: 160px;
-            margin-bottom: 20px;
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .header-content {
+            padding: 30px 20px;
         }
 
         header h1 {
             font-size: 45px;
             margin: 0;
             color: gold;
+        }
+
+        /* BOX MAKERS TEXT */
+        .tagline {
+            font-size: 22px;
+            color: white;
+            margin-top: 5px;
+            letter-spacing: 2px;
         }
 
         header p {
@@ -110,6 +119,12 @@
             text-decoration: none;
         }
 
+        /* BLUE PHONE NUMBERS */
+        .phone {
+            color: #00aaff;
+            font-weight: bold;
+        }
+
         /* WhatsApp Button */
         .whatsapp {
             position: fixed;
@@ -142,12 +157,16 @@
 
 <header>
     <img src="logo.png" alt="Company Logo">
-    <h1>FA ENTERPRISE</h1>
-    <p><strong>Since 1996</strong></p>
-    <p><strong>GST No: 19BOLPA5021H1Z6</strong></p>
-    <p>QUALITY IN PRODUCT SHOWS QUALITY IN LIFE</p>
-    <br>
-    <a href="#contact" class="btn">Contact Us</a>
+
+    <div class="header-content">
+        <h1>FA ENTERPRISE</h1>
+        <div class="tagline">BOX MAKERS</div>
+        <p><strong>Since 1996</strong></p>
+        <p><strong>GST No: 19BOLPA5021H1Z6</strong></p>
+        <p>QUALITY IN PRODUCT SHOWS QUALITY IN LIFE</p>
+        <br>
+        <a href="#contact" class="btn">Contact Us</a>
+    </div>
 </header>
 
 <div class="highlight">
@@ -183,9 +202,15 @@ WE ARE PROVIDING PACKAGING SOLUTIONS SINCE 1996 SPECIALIZING IN HIGH QUALITY GAR
 
 <section id="contact">
     <h2>Contact Details</h2>
-    <p><strong>Proprietor: Munna Ansari</strong> – <a href="tel:9831671101">9831671101</a></p>
-    <p><strong>Farhan:</strong> <a href="tel:9674182706">9674182706</a></p>
-    <p><strong>Amran:</strong> <a href="tel:7044529461">7044529461</a></p>
+    <p><strong>Proprietor: Munna Ansari</strong> – 
+        <a class="phone" href="tel:9831671101">9831671101</a>
+    </p>
+    <p><strong>Farhan:</strong> 
+        <a class="phone" href="tel:9674182706">9674182706</a>
+    </p>
+    <p><strong>Amran:</strong> 
+        <a class="phone" href="tel:7044529461">7044529461</a>
+    </p>
     <p>📧 Email: <a href="mailto:faenterprise825@gmail.com">faenterprise825@gmail.com</a></p>
 </section>
 
@@ -197,12 +222,10 @@ WE ARE PROVIDING PACKAGING SOLUTIONS SINCE 1996 SPECIALIZING IN HIGH QUALITY GAR
     </a>
 </footer>
 
-<!-- Instagram Button -->
 <a class="instagram" href="https://www.instagram.com/f.a.enterprise_box_maker?utm_source=qr&igsh=ejMycWx1eWJpNQ==" target="_blank">
     Instagram
 </a>
 
-<!-- WhatsApp Button -->
 <a class="whatsapp" href="https://wa.me/919674182706" target="_blank">
     WhatsApp
 </a>
