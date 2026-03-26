@@ -4,7 +4,7 @@
     <title>FA Enterprise | Premium Garments Packaging</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -23,6 +23,40 @@
         header {
             background: #000;
             text-align: center;
+            position: relative;
+        }
+
+        /* MENU ICON */
+        .menu-icon {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* MENU */
+        .menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 20px;
+            background: #000;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+
+        .menu a:hover {
+            color: gold;
         }
 
         header img {
@@ -39,16 +73,14 @@
             font-size: 45px;
             margin: 0;
             color: gold;
-            font-weight: 800;
         }
 
-        /* 🔥 IMPROVED BOX MAKERS */
         .tagline {
-            font-size: 28px;
-            color: gold;
-            font-weight: 600;
-            letter-spacing: 4px;
-            margin-top: 5px;
+            font-size: 22px;
+            color: #d4af37;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-top: 6px;
         }
 
         header p {
@@ -155,6 +187,17 @@
 <body>
 
 <header>
+
+    <!-- MENU ICON -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <!-- MENU -->
+    <div id="menu" class="menu">
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </div>
+
     <img src="logo.png" alt="Company Logo">
 
     <div class="header-content">
@@ -166,13 +209,14 @@
         <br>
         <a href="#contact" class="btn">Contact Us</a>
     </div>
+
 </header>
 
 <div class="highlight">
-WE ARE PROVIDING PACKAGING SOLUTIONS SINCE 1996 SPECIALIZING IN HIGH QUALITY GARMENTS BOXES LIKE 6PC, 1PC, KARTONS, METALLIC BOXES, METALLIC KARTONS WITH GREAT DESIGNS AND AFFORDABLE PRICES.
+WE ARE PROVIDING PACKAGING SOLUTIONS SINCE 1996 SPECIALIZING IN HIGH QUALITY GARMENTS BOXES LIKE 6PC, 1PC, KARTONS, METALLIC BOXES.
 </div>
 
-<section>
+<section id="products">
     <h2>Our Products</h2>
     <div class="products">
 
@@ -228,6 +272,17 @@ WE ARE PROVIDING PACKAGING SOLUTIONS SINCE 1996 SPECIALIZING IN HIGH QUALITY GAR
 <a class="whatsapp" href="https://wa.me/919674182706" target="_blank">
     WhatsApp
 </a>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+</script>
 
 </body>
 </html>
